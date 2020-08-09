@@ -1,0 +1,91 @@
+.long-card-wrapper {
+  margin-top: 16px;
+  .card {
+    box-shadow: 0px 0px 20px #8888881c;
+    border-radius: 14px;
+    background: url('../../../assets/Images/Img2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    border: none;
+    position: relative;
+    width: 100% !important;
+      .top-content {
+          position: absolute;
+  right: 0px;
+  color: white;
+  background-color: black;
+  font-size: 12px;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  border-top-right-radius: 14px;
+  border-bottom-left-radius: 14px;
+  opacity: 0.8;
+      }
+    .card-content {
+      right: 0;
+      left: 0;
+      background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+      border-bottom-left-radius: 14px;
+      border-bottom-right-radius: 14px;
+      position: absolute;
+      top: 45%;
+      bottom: 0;
+      padding-top: 3em;
+      padding-left: 1.5em;
+      padding-bottom: 1.5em;
+      padding-right: 1.5em;
+
+      .bottom-flex {
+        display: flex;
+        flex-direction: column;
+
+        .top-container {
+          display: flex;
+          flex-direction: row;
+
+          .title-container {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+
+            .heading-text {
+              font-size: 20px;
+              font-family: 'Metropolis-Bold';
+              color: #F9F2DC;
+            }
+
+            .time {
+              margin-top: 0.5em;
+              font-family: 'Metropolis-Bold';
+              color: #F9F2DC;
+            }
+
+            .clock-image {
+              margin-right: 8px;
+            }
+          }
+
+          .favourite-container {
+            align-self: center;
+          }
+        }
+
+        .description-container {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          /* number of lines to show */
+          -webkit-box-orient: vertical;
+          font-size: 14px;
+          margin-top: 1em;
+          color: #F9F2DC;
+        }
+      }
+    }
+  }
+}

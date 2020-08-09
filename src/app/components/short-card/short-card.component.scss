@@ -1,0 +1,107 @@
+@import "../../../../node_modules/bootstrap/scss/bootstrap.scss";
+.short-card-wrapper {
+  margin-top: 16px;
+
+  .card {
+    box-shadow: 0px 0px 20px #8888881c;
+    border-radius: 14px;
+    // background: url('../../../assets/Images/Img2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    border: none;
+    position: relative;
+    width: 100% !important;
+
+    .background {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+
+    .top-content {
+      position: absolute;
+      right: 0px;
+      color: white;
+      background-color: black;
+      font-size: 12px;
+      padding-left: 2em;
+      padding-right: 2em;
+      padding-top: 0.5em;
+      padding-bottom: 0.5em;
+      border-top-right-radius: 14px;
+      border-bottom-left-radius: 14px;
+      opacity: 0.8;
+    }
+
+    .card-content {
+        right: 0;
+    left: 0;
+      background-image: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1), rgba(255, 255, 255, 1), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+      border-bottom-left-radius: 14px;
+      border-bottom-right-radius: 14px;
+      position: absolute;
+      top: 45%;
+      bottom: 0;
+      padding-top: 3em;
+      padding-left: 1.5em;
+      padding-bottom: 1.5em;
+      padding-right: 1.5em;
+
+      .bottom-flex {
+        display: flex;
+        flex-direction: column;
+
+        .top-container {
+          display: flex;
+          flex-direction: row;
+
+          .title-container {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+
+            .heading-text {
+              font-size: 20px;
+              font-family: 'Metropolis-Bold';
+            }
+
+            .time {
+              margin-top: 0.5em;
+              font-family: 'Metropolis-Bold';
+            }
+
+            .clock-image {
+              margin-right: 8px;
+            }
+          }
+
+          .favourite-container {
+            align-self: center;
+          }
+        }
+
+        .description-container {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          /* number of lines to show */
+          -webkit-box-orient: vertical;
+          font-size: 14px;
+          margin-top: 1em;
+        }
+      }
+    }
+  }
+}
+@include media-breakpoint-down(lg) {
+    .short-card-wrapper {
+        .card {
+            height: 400px !important;
+        }
+    }
+}

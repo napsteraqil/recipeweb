@@ -1,0 +1,25 @@
+<div class="long-card-wrapper" routerLink="/Details">
+    <div class="card" [ngStyle]="{ 'background': getImageUrl() }">
+        <div class="top-content">
+            In {{item.category}}
+        </div>
+       <div   class="card-content">
+           <div class="top-flex">
+           </div>
+           <div class="bottom-flex">
+               <div class="top-container">
+                   <div class="title-container">
+                       <div class="heading-text">{{item.name}}</div>
+                       <div class="time"><img class="clock-image" src="../../../assets/Icons/Icon feather-clock.png">24 mins</div>
+                   </div>
+                   <div class="favourite-container">
+                       <img src="../../../assets/Icons/Icon feather-heart-color.png"/>
+                   </div>
+               </div>
+               <div class="description-container">
+                {{item.description}}
+               </div>
+           </div>
+       </div>
+    </div>
+</div>

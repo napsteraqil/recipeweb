@@ -1,0 +1,220 @@
+@import '../../../assets/Fonts/stylesheet.css';
+@import "../../../../node_modules/bootstrap/scss/bootstrap.scss";
+.font-style {
+    font-family: 'Metropolis Extra';
+}
+.details-wrapper {
+    .cards-container {
+        padding-top: 3em !important;
+    }
+    margin-top: 5em;
+    margin-bottom: 5em;
+    .search-container {
+        .no-outline{
+            outline: none;
+            border: none;
+            padding-left: 20px;
+            background-color: rgba(0,0,0,0);
+            
+            }
+    }
+    .row {
+        margin: 0px !important;
+    }
+    .remove-padding {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .title-container {
+        width: 100%;
+        text-align: right;
+        margin-right: 1em;
+        margin-bottom: 1em;
+        .category-heading {
+            font-size: 12px;
+              font-family: 'Metropolis-Bold';
+              color: grey;
+        }
+        .category {
+            font-size: 48px;
+              font-family: 'Metropolis-Bold';
+        }
+    }
+}
+.minus-margin {
+    margin-top: -3em;
+}
+@include media-breakpoint-down(lg) {
+    .minus-margin {
+        margin-top: 0px;
+    }
+}
+
+@media (min-width: 1400px) {
+    // .padding {
+    //     padding-right: 6em;
+    //     padding-left: 6em;
+    // }
+}
+.no-outline{
+    outline: none;
+    border: none;
+    padding-left: 20px;
+    background-color: rgba(0,0,0,0);
+    
+    }
+    .font-style {
+        font-family: 'Metropolis Extra'
+    };
+    .no-outline{
+        outline: none;
+        border: none;
+        padding-left: 20px;
+        background-color: rgba(0,0,0,0);
+        
+        }
+    
+        .button{
+            background-color: white;
+            border-radius: 50%;
+            padding-left: 7px;
+            padding-top: 7px;
+            padding-right: 5px;
+            padding-bottom: 5px;
+            
+       
+        }
+    
+        .mt-20{
+            margin-top: 20px;
+        }
+    
+        .mt-30{
+            margin-top: 30px;
+        }
+        
+        .mt-40{
+            margin-top: 40px;
+        }
+        
+        .mt-50{
+            margin-top: 50px;
+        }
+    
+        .back-key{
+            height: 20px;
+            width: 20px;
+            float: left;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+    
+        .embed-responsive-item{
+            border-radius: 10px;
+        }
+    
+        
+        .star{
+            padding-left: 5px;
+            padding-right: 5px;
+            
+        }
+        .rating span{
+            background-color: black;
+            color: white;
+            border-radius: 4px;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-right: 10px;
+        }
+    
+        .ratings{
+            justify-content: right;
+            margin-left:15px ;
+        }
+       #Cheese{
+           text-align: right;
+    
+       }
+      .description{
+          text-align: right;
+    
+       }
+        
+       
+    
+         .flex-container{
+             display: flex;
+             color: white;
+             
+             
+         }
+         .num{
+             font-size: 25px;
+             font-style: bold;
+             justify-content: center;
+             align-items: center;
+             color: white;
+            
+         }
+    
+     .heart{
+         margin-left: 15px;
+     }
+    
+     .fav{
+         justify-content: right;
+     }
+    
+     .txt-box{
+         min-height: 100px; 
+         width: 100%;
+         margin-bottom: 10px;
+        border-radius: 10px;
+        border-width: 0px;
+        outline: none;
+         
+     }
+    .btn-success{
+        background-color: black;
+        width: 100%;
+        border-radius: 10px;
+    }
+    .line{
+        width: 60%;
+        justify-content: center;
+    }
+    .container {
+        position: relative;
+        text-align: center;
+        color: grey;
+      }
+      .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .receipe {
+          text-align: right;
+      }
+      .rate {
+          justify-content: right;
+          align-items: right;
+          float: right;
+      }
+      .rated {
+          justify-content: right;
+          align-items: right;
+      }
+      .content {
+          text-align: right;
+      }
+      .flex-container div{
+        background-color: black;
+        margin: 10px;
+        padding: 20px;
+        border-radius: 50% !important;
+        
+        
+      }

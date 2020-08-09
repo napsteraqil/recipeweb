@@ -1,0 +1,31 @@
+<div class="dashboard-wrapper">
+  <div class="row search-container">
+    <div class="col-1 col-xl-2"></div>
+    <div class="col-10 col-xl-8">
+      <img src="../../../assets/Icons/Icon feather-search.png" class="button">
+      <input type="text" class="no-outline" placeholder="Search recipes..">
+    </div>
+    <div class="col-1 col-xl-2"></div>
+  </div>
+  <div class="row cards-container">
+    <div class="col-1 col-xl-2"></div>
+    <div class="col-10 col-xl-8 font-style padding">
+      <div class="title-container">
+        <div class="category-heading">CATEGORY</div>
+        <div class="category">Pizza & Noodles</div>
+      </div>
+      <div class="row ">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 remove-padding"
+          *ngFor="let item of foodItems; let i = index" [ngClass]="{'minus-margin': setMargin(i)}">
+          {{changeCard(i)}}
+          <app-long-card *ngIf="!cardDisplay" [item]="item" routerLink="/Details"></app-long-card>
+          <app-short-card *ngIf="cardDisplay" [item]="item" routerLink="/Details"></app-short-card>
+        </div>
+      </div>
+    </div>
+    <div class="col-1 col-xl-2"></div>
+  </div>
+
+</div>
+
+
